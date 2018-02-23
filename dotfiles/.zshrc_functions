@@ -2,19 +2,17 @@
 
 ssh() {
 
-if ([[$@ = 'LinuxVM']]); then
+if [[ $@ = 'LinuxVM' ]]; then
     echo "Starting Linux VM"
-    command ssh gerardo@172.22.222.40
+    command ssh gerardo@172.22.222.34
 
 else
-    echo $@
-    echo "WRONG"
-    #command ssh $@
+    command ssh $@
 
 fi
-#################################################################################
+
 }
-   
+#################################################################################   
 matlabRun() {
     matlab -nodisplay -nosplash -nodesktop -r
     "try, run('$1');, catch, exit(1), end, exit(0)";
