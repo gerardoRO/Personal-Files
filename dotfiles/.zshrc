@@ -15,7 +15,7 @@ source $ZSH/oh-my-zsh.sh
 ##################################################################################################################
 #Read input from dircolors to incorporate the colors into ls and suppress output
 
-eval 'dircolors -b  ~/.dircolors > /dev/null'
+eval 'dircolors -b  ~/Repos/PersonalFiles/dotfiles/.dircolors > /dev/null'
 alias ls="ls --color=auto"
 
 ##################################################################################################################
