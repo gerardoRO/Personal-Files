@@ -37,6 +37,14 @@ backup-directory-alist
       version-control t)               ; use versioned backups
 
 ;;========================================================================
+;; multiple cursors prorgram
+(require 'multiple-cursors)
+
+(global-set-key (kbd "C-c m") 'mc/edit-lines) ;; add multiple continuous cursors
+(global-set-key (kbd "C-c a") 'mc/mark-all-like-this) ;; add multiple cursors to all like this
+
+;;========================================================================
+
 ;; autosave
 ;(setq auto-save-file-name-transforms
 ;      '((".*",temporary-file-directory t)))
