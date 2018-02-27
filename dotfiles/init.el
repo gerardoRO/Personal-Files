@@ -45,9 +45,9 @@ backup-directory-alist
 
 ;;========================================================================
 
-;; autosave
-;(setq auto-save-file-name-transforms
-;      '((".*",temporary-file-directory t)))
+;; ;;autosave
+;;(setq auto-save-file-name-transforms
+      ;;'((".*",temporary-file-directory t)))
 
 ;;========================================================================
 (custom-set-variables

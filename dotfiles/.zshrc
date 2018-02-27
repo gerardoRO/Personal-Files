@@ -16,7 +16,8 @@ source $ZSH/oh-my-zsh.sh
 #Read input from dircolors to incorporate the colors into ls and suppress output
 
 eval 'dircolors -b  ~/Repos/PersonalFiles/dotfiles/.dircolors > /dev/null'
-alias ls="ls --color=never"
+alias grep='grep -n'
+alias ls="ls --color=always"
 
 ##################################################################################################################
 #Create aliases
