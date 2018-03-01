@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 
 eval 'dircolors -b  ~/Repos/PersonalFiles/dotfiles/.dircolors > /dev/null'
 alias grep='grep -n'
-alias ls="ls --color=always"
+alias ls="ls -B -I \"NTUSER*\" -I \"ntuser*\" --color=auto"
 
 ##################################################################################################################
 #Create aliases
