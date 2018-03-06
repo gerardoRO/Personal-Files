@@ -26,7 +26,7 @@ alias mytmux='tmux -f ~/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf attach' #
 
 ##################################################################################################################
 #Add to Path
-PATH=/cygdrive/c/Users/Gerardo/AppData/Local/Programs/Python/Python36:$PATH
+PATH=/cygdrive/c/Users/Gerardo/AppData/Local/Programs/Python/Python36-32:$PATH
 
 ##################################################################################################################
 #Add function file
