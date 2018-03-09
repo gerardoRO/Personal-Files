@@ -22,7 +22,7 @@ alias ls="ls -B -I \"NTUSER*\" -I \"ntuser*\" --color=auto"
 ##################################################################################################################
 #Create aliases
 alias workhome='cd C:/Users/Pooja'
-alias mytmux='tmux -f ~/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf attach' #run customized tmux
+alias mytmux='tmux -f ~/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 
 ##################################################################################################################
 #Add to Path
