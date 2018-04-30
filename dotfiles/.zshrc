@@ -22,6 +22,7 @@ alias ls="ls -B -I \"NTUSER*\" -I \"ntuser*\" --color=auto"
 ##################################################################################################################
 #Create aliases
 alias workhome='cd C:/Users/Pooja'
+alias ProcessingCode='cd C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode'
 alias mytmux='tmux -f ~/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 
 ##################################################################################################################
