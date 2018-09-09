@@ -1,0 +1,48 @@
+* Colloquium
+**  Grant Application
+*** TODO Find out Deadlines
+*** TODO  SUA Application
+- Talk to Jose
+*** TODO COGS Application
+** Career Center Presentation
+-planned for November 
+-planned for lunch time
+*** TODO Talk with CC Rep to see if time/date works out
+*** TODO Send email inviting people (and RSVPing)
+** Greg Molnar Professional Development Module
+*** TODO Find out exact cost
+*** TODO Talk with GWBME see if they are still interested
+** Finance Clarifications
+*** TODO Reply to Sheila's original email regarding several financial transactions
+** Grad Student Presentations
+*** TODO Sign up in the google poll
+
+* Lab
+** TODO Submit ARO Abstract
+   DEADLINE: <2018-09-17 Mon>
+** Data Transfer
+*** TODO Find out from Hubert if continuing on Google Drive or moving to projmon
+- If moving from Google Drive, is it ok to leave Sarah's data there?
+*** TODO Move Data from soniclab.bsbe server somewhere else
+** US Error Calibration
+*** TODO Test pulse duration if influences amplitude
+*** TODO Collect electrical and pressure waveforms before and after matching box
+*** TODO Look at Maching box spec sheet Jerel sent over
+**  TODO Read Paper
+**  New lab computer
+*** TODO fill out purchasing order from Amazon order
+*** TODO Send to Hubert
+
+* SFA
+** TODO Add student submissions From Tuesday to Excel sheet
+   DEADLINE: <2018-09-10 Mon>
+** TODO Come up with potential projects for Sept 27
+
+* Personal
+** TODO Update Resume
+** TODO Scan Passport
+** TODO Scan Health Insurance
+** TODO Call Bank about being in Colombia
+** TODO Scan Credit Cards
+** Packing List for Colombia
+*** TODO 
