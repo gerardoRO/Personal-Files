@@ -47,12 +47,7 @@ depth of water tank (as a load)
 
 
 =======
-**  TODO Read Paper
-**  New lab computer
-*** TODO fill out purchasing order from Amazon order
-*** TODO Send to Hubert
-** TODO Order Guinea pigs (info in lab journal)
->>>>>>> d16b986528af18704d54b892b65f718e7f9f8613
+
 * SFA
 ** DONE Add student submissions From Tuesday to Excel sheet
    DEADLINE: <2018-09-10 Mon>
@@ -63,7 +58,7 @@ depth of water tank (as a load)
 ** TODO Update Resume
 ** TODO Get bus tickets from Cartagena to Santa Marta [[https://www.juanballena.com/products/cartagena-to-santa-marta-and-tayrona-shuttle-transfer?variant%3D21713640131][Link]]
 ** TODO Get bus tickets from Tayrona to Santa Marta [[https://www.juanballena.com/products/cartagena-to-santa-marta-and-tayrona-shuttle-transfer?variant%3D21713640131][link]]
-** TODO Look up new French Press glass dimensions
+** DONE Look up new French Press glass dimensions
 - 13cm wide , 18.5cm tall. (12 cup) [[https://www.bodum.com/us/en/1512-10-spare-beaker][link]]
 - 11cm wide, 18 cm tall, (8 cup) [[https://www.bodum.com/us/en/1508-10-spare-beaker][link]]
 - 7.8cm wide, 13cm tall, (3cup) [[https://www.bodum.com/us/en/1503-10-spare-beaker][link]]
