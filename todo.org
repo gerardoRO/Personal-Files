@@ -32,6 +32,7 @@
 *** TODO Test pulse duration if influences amplitude
 *** TODO Collect electrical and pressure waveforms before and after matching box
 *** TODO Look at Maching box spec sheet Jerel sent over
+<<<<<<< HEAD
 *** Variables to test:
 pulse duration
 depth of water tank (as a load)
@@ -45,6 +46,13 @@ depth of water tank (as a load)
 *** DONE How can I easily move stuff from MyDrive to TeamDrive? https://gsuite.google.com/learning-center/products/drive/get-started-team-drive/#!/
 
 
+=======
+**  TODO Read Paper
+**  New lab computer
+*** TODO fill out purchasing order from Amazon order
+*** TODO Send to Hubert
+** TODO Order Guinea pigs (info in lab journal)
+>>>>>>> d16b986528af18704d54b892b65f718e7f9f8613
 * SFA
 ** DONE Add student submissions From Tuesday to Excel sheet
    DEADLINE: <2018-09-10 Mon>
@@ -101,5 +109,8 @@ depth of water tank (as a load)
 *** TODO shorts
 *** TODO shirts
 *** TODO jeans
+<<<<<<< HEAD
 *** TODO beach towel
 *** TODO rain jacket
+=======
+>>>>>>> d16b986528af18704d54b892b65f718e7f9f8613
