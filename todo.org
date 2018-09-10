@@ -32,7 +32,7 @@
 **  New lab computer
 *** TODO fill out purchasing order from Amazon order
 *** TODO Send to Hubert
-
+** TODO Order Guinea pigs (info in lab journal)
 * SFA
 ** TODO Add student submissions From Tuesday to Excel sheet
    DEADLINE: <2018-09-10 Mon>
@@ -45,4 +45,40 @@
 ** TODO Call Bank about being in Colombia
 ** TODO Scan Credit Cards
 ** Packing List for Colombia
-*** TODO 
+*** TODO Vaccine Sheet
+*** TODO Passport
+*** TODO Cash
+*** TODO Mosquito repellant
+*** TODO Malaria medicine
+*** TODO Anti-diarrhea medicine
+*** TODO hiking shoes
+*** TODO hiking bladder
+*** TODO formal shoes
+*** TODO sperries
+*** TODO Suit
+*** TODO Dress shirt
+*** TODO glasses
+*** TODO Sunscreen
+*** TODO fancy socks
+*** TODO Dress shirt
+*** TODO tie
+*** TODO guayabera
+*** TODO eccos
+*** TODO hat
+*** TODO external batteries
+*** TODO usb-c cables
+*** TODO book
+*** TODO journal
+*** TODO medical kit
+*** TODO sunscreen
+*** TODO cologne
+*** TODO no show socks
+*** TODO dress shorts
+*** TODO swimsuit
+*** TODO headphones
+*** TODO chromecast (?)
+*** TODO underwear
+*** TODO socks
+*** TODO shorts
+*** TODO shirts
+*** TODO jeans
