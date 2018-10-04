@@ -12,12 +12,13 @@
 *** DONE Talk with CC Rep to see if time/date works out
 *** DONE Send email inviting people (and RSVPing)
 ** TODO Greg Molnar Professional Development Module
+*** TODO Student Fee Grant ?
 *** TODO Find out exact cost
 *** TODO Talk with GWBME see if they are still interested
-
+** TODO send email about meeting to Vijay, Michael and Bernie
+*** Happy Hour?
+*** Greg MOlnar thing? happening?
 * Lab
-** TODO Submit ARO Travel Grant
-   DEADLINE: <2018-09-30 Sun>
 ** TODO Data Transfer
 *** DONE Find out from Huebrt if continuing on Google Drive or moving to projmon
 - If moving from Google Drive, is it ok to leave Sarah's data there?
@@ -37,65 +38,19 @@ depth of water tank (as a load)
 =======
 
 >>>>>>> refs/remotes/origin/master
+** TODO Func Gen Issues
+- create a one-directional pipeline
 * SFA
 ** TODO Come up with potential projects for Sept 27
-** DONE Send email regarding meeting on Thursday
-
+** TODO Grab shirts for the missing people
 * Personal
 ** TODO Update Resume
 <<<<<<< HEAD
 =======
-** TODO Get bus tickets from Cartagena to Santa Marta [[https://www.juanballena.com/products/cartagena-to-santa-marta-and-tayrona-shuttle-transfer?variant%3D21713640131][Link]]
-** TODO Get bus tickets from Tayrona to Santa Marta [[https://www.juanballena.com/products/cartagena-to-santa-marta-and-tayrona-shuttle-transfer?variant%3D21713640131][link]]
-** DONE Look up new French Press glass dimensions
-- 13cm wide , 18.5cm tall. (12 cup) [[https://www.bodum.com/us/en/1512-10-spare-beaker][link]]
-- 11cm wide, 18 cm tall, (8 cup) [[https://www.bodum.com/us/en/1508-10-spare-beaker][link]]
-- 7.8cm wide, 13cm tall, (3cup) [[https://www.bodum.com/us/en/1503-10-spare-beaker][link]]
-** DONE Scan Passport
-** DONE Scan Health Insurance
-** DONE Call Bank about being in Colombia
-** DONE Scan Credit Cards
-** Packing List for Colombia
-*** TODO Vaccine Sheet
-*** TODO Passport
-*** TODO Cash
-*** TODO Mosquito repellant
-*** TODO Malaria medicine
-*** TODO Anti-diarrhea medicine
-*** TODO hiking shoes
-*** TODO hiking bladder
-*** TODO formal shoes
-*** TODO sperries
-*** TODO Suit
-*** TODO Dress shirt
-*** TODO glasses
-*** TODO Sunscreen
-*** TODO fancy socks
-*** TODO Dress shirt
-*** TODO tie
-*** TODO guayabera
-*** TODO eccos
-*** TODO hat
-*** TODO external batteries
-*** TODO usb-c cables
-*** TODO book
-*** TODO journal
-*** TODO medical kit
-*** TODO sunscreen
-*** TODO cologne
-*** TODO no show socks
-*** TODO dress shorts
-*** TODO swimsuit
-*** TODO headphones
-*** TODO chromecast (?)
-*** TODO underwear
-*** TODO socks
-*** TODO shorts
-*** TODO shirts
-*** TODO jeans
-<<<<<<< HEAD
-*** TODO beach towel
-*** TODO rain jacket
-=======
->>>>>>> d16b986528af18704d54b892b65f718e7f9f8613
->>>>>>> refs/remotes/origin/master
+** TODO Ask Greg MOlnar about Science-Medical Liaision
+** TODO Send email to Achin Bhowmik about internship (Hubert)
+** Incoming Expenses
+*** Snow Tires ($600)
+*** Flight to Boise ($500)
+*** Taxes ($3000)
+*** IRA ($5000)
