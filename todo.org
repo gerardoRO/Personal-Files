@@ -14,8 +14,8 @@
 ** TODO Greg Molnar Professional Development Module
 *** TODO Student Fee Grant ?
 *** TODO Find out exact cost
-*** TODO Talk with GWBME see if they are still interested
-** TODO send email about meeting to Vijay, Michael and Bernie
+*** DONE Talk with GWBME see if they are still interested
+** DONE send email about meeting to Vijay, Michael and Bernie
 *** Happy Hour?
 *** Greg MOlnar thing? happening?
 * Lab
@@ -38,7 +38,7 @@ depth of water tank (as a load)
 =======
 
 >>>>>>> refs/remotes/origin/master
-** TODO Func Gen Issues
+** DONE Func Gen Issues
 - create a one-directional pipeline
 * SFA
 ** TODO Come up with potential projects for Sept 27
