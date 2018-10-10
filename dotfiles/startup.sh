@@ -27,7 +27,7 @@ brew install gnu-sed --with-default-naMes
 Brew Install Gnu-tar --with-default-names
 brew install gnu-indent --with-default-names
 brew install gnu-which --with-default-names
-brew install gnu-grep --with-default-names
+brew installn gnu-grep --with-default-names
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
@@ -80,6 +80,16 @@ PYTHON_PACKAGES=(
     matplotlib
     pyplot
     pandas
+    send2trash
+    requests
+    beautifulsoup4
+    selenium
+    python-docx
+    PyPDF2
+    pyzmail
+    twilio
+    pillow
+
 )
 sudo pip install ${PYTHON_PACKAGES[@]}
 
