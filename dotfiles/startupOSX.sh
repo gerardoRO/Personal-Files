@@ -4,12 +4,6 @@ export LANG=$(locale -uU)
 # This file is not read by bash(1) if ~/.bash_profile or ~/.bash_login
 # exists.
 #
-# if running bash
-if [ -n "${BASH_VERSION}" ]; then
-  if [ -f "${HOME}/.zhrc" ]; then
-    source "${HOME}/.zshrc"
-  fi
-fi
 
 
 ##Installing brew files
@@ -96,4 +90,3 @@ fi
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ln -fs ~/mytheme* ~/.oh-my-zsh/themes/mytheme.zsh-theme
 source ~/.zshrc
-echo "I AM HERE"
