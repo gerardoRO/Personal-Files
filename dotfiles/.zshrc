@@ -21,7 +21,7 @@ alias grep='grep -n'
 ##################################################################################################################
 #Add to Path
 PATH=/cygdrive/c/Users/Gerardo/AppData/Local/Programs/Python/Python36-32:$PATH
-
+PYTHONPATH=~/Repos/PersonalFiles/Projects/Machine\ Learning\ A-Z:$PYTHONPATH
 ##################################################################################################################
 #Add function file
 

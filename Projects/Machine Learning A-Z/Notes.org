@@ -1,0 +1,27 @@
+** Multi-variable Regression
+   Important that we select the correct variables; how do we select which variables?
+*** 5 methods to build models: 
+**** All-in
+- if we have prior knowledge that all variables 
+- you have to 
+- preparing for backward elimination
+**** Backward Elimination (Stepwise Regression)
+step 1: Select significance level to stay in model SL = .05
+step 2: Fit the full model with all possible predictors (All-in method)
+step 3: Consider the predictor with the highest P-value  (if P> SL , go to STEP 4, otherwise end)
+step 4: Remove the predictor
+step 5: Fit model without variable
+**** Forward Selection (Stepwise Regression)
+step 1: Select significance level to stay in model SL = .05
+step 2: Fit all simple regression models y ~ xn - select the one with the lowest P-value
+step 3: Keep this variable and fit all possible models with one extra predictor by adding the new variable (from step 2)
+step 4: consider the predicto with the lowest P-value - if P< SL go to step 3, otherwise END. 
+**** Bidirectional Elimination (Stepwise Regression)
+step 1: Select a signficiance level to enter and to stay in the model
+step 2: Perform the next step of forward selection (new variables must have P < SL_enter)
+step 3: Perform all the steps of backward elimination (old variables must have P < SL_stay) ---> Repeat step 3 for everytime you add a new varaible
+step 4: No new variables can enter and no old variables can exit
+**** Score Comparison 
+step 1: Select a criterion of goodness of fit
+step 2: Construct all possible regression models: 2^n -1 total combinations
+step 3: select the one with the best criterion
