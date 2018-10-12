@@ -74,6 +74,13 @@ PYTHON_PACKAGES=(
     matplotlib
     pyplot
     pandas
+    scipy
+    numpy
+    keras
+    tensorflow
+    nltk
+    theanos
+    statsmodels
 )
 sudo pip install ${PYTHON_PACKAGES[@]}
 

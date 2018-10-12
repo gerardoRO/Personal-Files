@@ -13,8 +13,6 @@ PACKAGES={
     git
     curl
     tmux
-    python2-pip
-    python2
     python3-pip
     python3
     ipython
@@ -30,6 +28,11 @@ PYTHON_PACKAGES=(
     pandas
     numpy
     scipy
+    keras
+    theanos
+    tensorflow
+    nltk
+    statsmodels
 )
 
 sudo pip install ${PYTHON_PACKAGES[@]}
