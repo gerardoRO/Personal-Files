@@ -27,3 +27,5 @@ PYTHONPATH=~/Repos/PersonalFiles/Projects/Machine\ Learning\ A-Z:$PYTHONPATH
 
 source $HOME/Repos/PersonalFiles/dotfiles/.zshrc_functions
 
+
+tmux

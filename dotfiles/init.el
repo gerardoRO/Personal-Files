@@ -18,6 +18,9 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+;;========================================================================
+;; Theme
+(load-theme 'solarized t)
 
 ;;========================================================================
 ;; Line numbers
@@ -40,6 +43,7 @@ backup-directory-alist
 
 (global-set-key (kbd "C-c m") 'mc/edit-lines) ;; add multiple continuous cursors
 (global-set-key (kbd "C-c a") 'mc/mark-all-like-this) ;; add multiple cursors to all like this
+(global-set-key (kbd "C-S-a") 'mc/mark-next-word-like-this) ;; add multiple cursors at whole words
 
 ;;========================================================================
 (custom-set-variables
