@@ -4,12 +4,6 @@ export LANG=$(locale -uU)
 # This file is not read by bash(1) if ~/.bash_profile or ~/.bash_login
 # exists.
 #
-# if running bash
-if [ -n "${BASH_VERSION}" ]; then
-  if [ -f "${HOME}/.zhrc" ]; then
-    source "${HOME}/.zshrc"
-  fi
-fi
 
 
 ##Installing brew files
@@ -80,6 +74,7 @@ PYTHON_PACKAGES=(
     matplotlib
     pyplot
     pandas
+<<<<<<< HEAD:dotfiles/startup.sh
     send2trash
     requests
     beautifulsoup4
@@ -90,6 +85,15 @@ PYTHON_PACKAGES=(
     twilio
     pillow
 
+=======
+    scipy
+    numpy
+    keras
+    tensorflow
+    nltk
+    theanos
+    statsmodels
+>>>>>>> 0d80b5c6c9248ddaa3c2ccee61be4f1e8b4dcb14:dotfiles/startupOSX.sh
 )
 sudo pip install ${PYTHON_PACKAGES[@]}
 
@@ -106,4 +110,3 @@ fi
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ln -fs ~/mytheme* ~/.oh-my-zsh/themes/mytheme.zsh-theme
 source ~/.zshrc
-echo "I AM HERE"
