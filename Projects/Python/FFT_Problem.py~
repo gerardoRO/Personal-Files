@@ -1,0 +1,6 @@
+
+import numpy as np
+import numpy.fft as fft
+import scipy.signal as sig
+
+t_vector = arange(0,10,.0001)

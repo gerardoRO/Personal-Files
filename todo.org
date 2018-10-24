@@ -42,11 +42,7 @@ depth of water tank (as a load)
 - create a one-directional pipeline
 * SFA
 ** TODO Come up with potential projects for Sept 27
-** TODO Grab shirts for the missing people
 * Personal
-** TODO Update Resume
-<<<<<<< HEAD
-=======
 ** TODO Ask Greg MOlnar about Science-Medical Liaision
 ** TODO Send email to Achin Bhowmik about internship (Hubert)
 ** Incoming Expenses
