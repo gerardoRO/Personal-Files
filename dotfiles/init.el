@@ -2,11 +2,12 @@
 
 (package-initialize)
 ;; load emacs 24 package system. Add MELP repository
-(add-to-list 'package-archives
+(package-refresh-contents)
+(Add-to-list 'package-archives
 	     '("melpa" .
 	       "http://melpa.milkbox.net/packages/") t)
 
-(defvar prelude-packages
+(Defvar prelude-packages
   '(python solarized-theme matlab-mode multiple-cursors))
 
 (defun prelude-packages-installed-p ()
