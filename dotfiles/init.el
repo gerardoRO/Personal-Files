@@ -23,6 +23,7 @@
 ;; Theme
 (require 'solarized-theme)
 (load-theme 'solarized t)
+(set-terminal-parameter nil 'background-mode 'dark)
 
 ;;========================================================================
 ;; Line numbers
