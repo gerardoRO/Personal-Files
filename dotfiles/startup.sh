@@ -6,7 +6,7 @@ case $(uname) in
 	alias install_stuff=apt-get install
     ;;
     CYGWIN*)
-	if [ -x /bin/apt-cyg ];then
+	if [ ! -x /bin/apt-cyg ];then
 	    wget -qo /bin/apt-cyg "https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg"
 	    chmod +x /bin/apt-cyg
 	fi
@@ -14,7 +14,7 @@ case $(uname) in
 	alias install_stuff=apt-cyg install
     ;;
     Darwin)
-	if [ -x /bin/brew ];then
+	if [ ! -x /bin/brew ];then
 	    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Hombrew/install/master/install)"
 	fi
 	
