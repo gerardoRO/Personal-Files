@@ -43,7 +43,7 @@ PACKAGES=(
     curl
     tmux
     python3
-
+    python3-pip
 )
 
 echo "installing packages"
@@ -57,6 +57,7 @@ PYTHON_PACKAGES=(
     numpy
 )
 
+python3 -m pip install --upgrade pip
 pip3 install ${PYTHON_PACKAGES[@]}
 
 
