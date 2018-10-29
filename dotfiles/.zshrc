@@ -19,10 +19,6 @@ alias ProcessingCode='cd C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode
 alias tmux='tmux -f ~/.tmuxMySetup.conf' #run customized tmux
 alias grep='grep -n'
 ##################################################################################################################
-#Add to Path
-PATH=/cygdrive/c/Users/Gerardo/AppData/Local/Programs/Python/Python36-32:$PATH
-PYTHONPATH=~/Repos/PersonalFiles/Projects/Machine\ Learning\ A-Z:$PYTHONPATH
-##################################################################################################################
 #Add function file
 
 source $HOME/Repos/PersonalFiles/dotfiles/.zshrc_functions
