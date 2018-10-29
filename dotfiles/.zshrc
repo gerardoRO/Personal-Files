@@ -16,12 +16,10 @@ source $ZSH/oh-my-zsh.sh
 ##################################################################################################################
 #Create aliases
 alias ProcessingCode='cd C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode'
-alias tmux='tmux -f $HOME/.tmuxMySetup.conf' #run customized tmux
+alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 alias grep='grep -n'
 ##################################################################################################################
 #Add function file
 
 source $HOME/Repos/PersonalFiles/dotfiles/.zshrc_functions
-
-
 tmux
