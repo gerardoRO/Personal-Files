@@ -11,7 +11,7 @@ case $(uname) in
 	    chmod +x /bin/apt-cyg
 	fi
 
-	alias install_stuff=apt-cyg install
+	alias install_stuff='apt-cyg install'
     ;;
     Darwin)
 	if [ ! -x /bin/brew ];then
