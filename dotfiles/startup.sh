@@ -56,17 +56,7 @@ install_stuff ${PACKAGES[@]}
 
 PYTHON_PACKAGES=(
     virtualenv
-    ipdb
-    matplotlib
-    pyplot
-    pandas
     numpy
-    scipy
-    keras
-    theanos
-    tensorflow
-    nltk
-    statsmodels
 )
 
 pip3 install ${PYTHON_PACKAGES[@]}
