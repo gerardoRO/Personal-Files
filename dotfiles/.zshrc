@@ -13,9 +13,14 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+
+
 ##################################################################################################################
 #Create aliases
-alias ProcessingCode='cd C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode'
+export LabCode=$HOME/Repos/SonicLab
+export PersonalCode=$HOME/Repos/PersonalFiles
+export ProcessingCode=C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode
+
 alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 alias grep='grep -n'
 ##################################################################################################################
