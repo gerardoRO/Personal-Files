@@ -1,9 +1,9 @@
 #!/bin/zsh
 
-
+#Determine OS type
 case $(uname) in
     Linux)
-	alias install_stuff=apt-get install
+	alias install_stuff='apt-get install'
     ;;
     CYGWIN*)
 	if [ ! -x /bin/apt-cyg ];then
@@ -18,12 +18,11 @@ case $(uname) in
 	    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Hombrew/install/master/install)"
 	fi
 	
-	alias install_stuff=brew install
+	alias install_stuff='brew install'
 	brew install caskroom/cask/brew-cask
 
 	CASKS=(
 	    dropbox
-	    flux\kl
 	    google-chorme
 	    google-drive
 	    gpgtools
@@ -65,13 +64,15 @@ pip3 install ${PYTHON_PACKAGES[@]}
 
 if [[ ! -d ~/.oh-my-zsh ]] ;then
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -o -)"
-ln -fs ~/mytheme* ~/.oh-my-zsh/themes/mytheme.zsh-theme
+chmod +x install.sh
+./install.sh
 fi
 
 if [[ ! -d ~/Repos/PersonalFiles ]] ;then
-    git clone https://github.umn.edu/rodr0283/PersonalFiles ~/Repos/PersonalFiles
-    ln -fs ~/Repos/PersonalFiles/dotfiles/.* .
-    ln -fs ~/Repos/PersonalFiles/dotfiles/* .
+    git clone https://github.umn.edu/rodr0283/PersonalFiles $HOME/Repos/PersonalFiles
+    ln -fs $HOME/mytheme* $HOME/.oh-my-zsh/themes/mytheme.zsh-theme
+    ln -fs $HOME/Repos/PersonalFiles/dotfiles/.* .
+    ln -fs $HOME/Repos/PersonalFiles/dotfiles/* .
 fi
 
 source ./zshrc
