@@ -43,7 +43,6 @@ PACKAGES=(
     git
     curl
     tmux
-    python3-pip
     python3
 
 )
