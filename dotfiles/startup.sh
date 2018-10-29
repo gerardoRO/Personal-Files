@@ -7,7 +7,7 @@ case $(uname) in
     ;;
     CYGWIN*)
 	if [ ! -x /bin/apt-cyg ];then
-	    wget -qo /bin/apt-cyg "https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg"
+	    wget "https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg" && mv apt-cyg /bin/apt-cyg
 	    chmod +x /bin/apt-cyg
 	fi
 
