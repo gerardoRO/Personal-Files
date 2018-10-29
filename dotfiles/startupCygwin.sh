@@ -37,6 +37,10 @@ PYTHON_PACKAGES=(
 
 sudo pip install ${PYTHON_PACKAGES[@]}
 
+if [[ ! -d ~/.oh-my-zsh ]] ;then
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -o -)"
+ln -fs ~/mytheme* ~/.oh-my-zsh/themes/mytheme.zsh-theme
+fi
 
 if [[ ! -d ~/Repos/PersonalFiles ]] ;then
     git clone https://github.umn.edu/rodr0283/PersonalFiles ~/Repos/PersonalFiles
@@ -44,9 +48,5 @@ if [[ ! -d ~/Repos/PersonalFiles ]] ;then
     ln -fs ~/Repos/PersonalFiles/dotfiles/* .
 fi
 
-if [[ ! -d ~/.oh-my-zsh ]] ;then
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -o -)"
-ln -fs ~/mytheme* ~/.oh-my-zsh/themes/mytheme.zsh-theme
-source ~/.zshrc
-fi
 
+source ./zshrc

@@ -74,7 +74,6 @@ PYTHON_PACKAGES=(
     matplotlib
     pyplot
     pandas
-<<<<<<< HEAD:dotfiles/startup.sh
     send2trash
     requests
     beautifulsoup4
@@ -84,8 +83,6 @@ PYTHON_PACKAGES=(
     pyzmail
     twilio
     pillow
-
-=======
     scipy
     numpy
     keras
