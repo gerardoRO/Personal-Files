@@ -22,7 +22,7 @@ export PersonalCode=$HOME/Repos/PersonalFiles
 export ProcessingCode=C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode
 
 alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
-alias grep='grep -n'
+alias grep='grep -n --color -i'
 ##################################################################################################################
 #Add function file
 
