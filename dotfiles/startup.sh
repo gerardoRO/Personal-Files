@@ -55,6 +55,7 @@ install_stuff ${PACKAGES[@]}
 PYTHON_PACKAGES=(
     virtualenv
     numpy
+    virtualenvwrapper
 )
 
 python3 -m pip install --upgrade pip

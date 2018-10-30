@@ -28,3 +28,27 @@ alias grep='grep -n'
 
 source $HOME/Repos/PersonalFiles/dotfiles/.zshrc_functions
 tmux
+
+##################################################################################################################
+#Processes needed only at work
+
+if [[ $HOST == 'BME-LIMGRAD7' ]]; then
+    export CONDA_BASE_DIR=/cygdrive/c/Users/Pooja/Anaconda3 #create home directory
+
+    if [ ${CONDA_DEFAULT_ENV} ] && [ ${CONDA_DEFAULT_ENV} != 'root' ]; then
+	export CONDA_PREFIX=${CONDA_BASE_DIR}/envs/${CONDA_DEFAULT_ENV}
+    else
+	export CONDA_DEFAULT_ENV=root
+	export CONDA_PREFIX=${CONDA_BASE_DIR}
+    fi
+
+    alias cyg-conda=${CONDA_BASE_DIR}/Scripts/conda.exe
+    cyg-activate() {
+	export CONDA_DEFAULT_ENV=$1
+	cyg-conda info --envs
+	
+    }
+    
+fi
+
+
