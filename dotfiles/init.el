@@ -23,6 +23,7 @@
 ;; Theme
 (require 'solarized-theme)
 (load-theme 'solarized t)
+(set-terminal-parameter nil 'background-mode 'dark)
 
 ;;========================================================================
 ;; Line numbers
@@ -39,6 +40,20 @@
 
 (global-set-key (kbd "C-c m") 'mc/edit-lines) ;; add multiple continuous cursors
 (global-set-key (kbd "C-c a") 'mc/mark-all-like-this) ;; add multiple cursors to all like this
-(global-set-key (kbd "C-S-a") 'mc/mark-next-word-like-this) ;; add multiple cursors at whole words
+(global-set-key (kbd "C-c S-a") 'mc/mark-next-word-like-this) ;; add multiple cursors at whole words
 
 ;;========================================================================
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
