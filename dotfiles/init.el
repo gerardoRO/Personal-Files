@@ -8,7 +8,7 @@
 (package-refresh-contents)
 
 (defvar prelude-packages
-  '(python solarized-theme matlab-mode multiple-cursors anaconda-mode))
+  '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme))
 
 (defun prelude-packages-installed-p ()
   (loop for p in prelude-packages
