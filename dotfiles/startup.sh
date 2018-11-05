@@ -23,7 +23,7 @@ case $(uname) in
 
 	CASKS=(
 	    dropbox
-	    google-chorme
+	    chromedriver
 	    google-drive
 	    gpgtools
 	    iterm2
