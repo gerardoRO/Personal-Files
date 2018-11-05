@@ -21,8 +21,7 @@
 
 ;;========================================================================
 ;; Theme
-(require 'solarized-theme)
-(load-theme 'solarized t)
+(load-theme 'monokai t)
 (set-terminal-parameter nil 'background-mode 'dark)
 
 ;;========================================================================
