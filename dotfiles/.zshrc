@@ -45,9 +45,21 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
     alias cyg-conda=${CONDA_BASE_DIR}/Scripts/conda.exe
     cyg-activate() {
 	export CONDA_DEFAULT_ENV=$1
+	source ~/.zshrc
 	cyg-conda info --envs
-	
     }
+
+    PATH=$PATH:$CONDA_PREFIX
+    PATH=$PATH:$CONDA_PREFIX/Library/mingw-w64/bin
+    PATH=$PATH:$CONDA_PREFIX/Library/usr/bin
+    PATH=$PATH:$CONDA_PREFIX/Library/bin
+    PATH=$PATH:$CONDA_PREFIX/Scripts
+    PATH=$PATH:$HOME/scripts
+    PATH=$PATH:$HOME/local/bin
+    PATH=$PATH:/usr/local/bin
+    PATH=$PATH:/usr/bin
+
+    export PATH
     
 fi
 
