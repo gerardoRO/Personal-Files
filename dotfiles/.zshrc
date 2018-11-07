@@ -27,7 +27,6 @@ alias grep='grep -n --color -i'
 #Add function file
 
 source $HOME/Repos/PersonalFiles/dotfiles/.zshrc_functions
-tmux
 
 ##################################################################################################################
 #Processes needed only at work
@@ -63,4 +62,14 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
     
 fi
 
+##Variables necessary for virtualenvwrapper.sh
+WORKON_HOME=$HOME/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=$(which python3)
+export WORKON_HOME
+export VIRTUALENVWRAPPER_PYTHON
+
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+tmux
 
