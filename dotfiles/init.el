@@ -5,7 +5,7 @@
 
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")))
 
-(package-refresh-contents)
+;;(package-refresh-contents)
 
 (defvar prelude-packages
   '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme))
@@ -49,7 +49,8 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay))))
+    (hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
+ '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
