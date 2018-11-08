@@ -21,7 +21,11 @@
 
 ;;========================================================================
 ;; Theme
-(load-theme 'monokai t)
+(if (eq system-type 'cygwin)
+    (load-theme 'solarized t)
+  (load-theme 'monokai t)
+)
+
 (set-terminal-parameter nil 'background-mode 'dark)
 
 ;;========================================================================
@@ -47,6 +51,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(package-selected-packages
    (quote
     (hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
