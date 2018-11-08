@@ -68,7 +68,7 @@ VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export WORKON_HOME
 export VIRTUALENVWRAPPER_PYTHON
 
-source /usr/local/bin/virtualenvwrapper.sh
+source /bin/virtualenvwrapper.sh
 
 
 tmux
