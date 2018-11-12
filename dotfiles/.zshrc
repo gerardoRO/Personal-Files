@@ -47,6 +47,12 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
 	source ~/.zshrc
     }
 
+    cyg-deactivate(){
+	export CONDA_DEFAULT_ENV= ${CONDA_BASE_DIR}
+	source ~/.zshrc
+    }
+		
+
     . C:/Users/Pooja/Anaconda3/etc/profile.d/conda.sh
 fi
 
