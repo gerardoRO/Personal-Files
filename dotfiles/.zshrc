@@ -37,7 +37,7 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
     if [ ${CONDA_DEFAULT_ENV} ] && [ ${CONDA_DEFAULT_ENV} != 'root' ]; then
 	export CONDA_PREFIX=${CONDA_BASE_DIR}/envs/${CONDA_DEFAULT_ENV}
     else
-	export CONDA_DEFAULT_ENV=root
+	export CONDA_DEFAULT_ENV=${CONDA_BASE_DIR}
 	export CONDA_PREFIX=${CONDA_BASE_DIR}
     fi
 
@@ -45,21 +45,9 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
     cyg-activate() {
 	export CONDA_DEFAULT_ENV=$1
 	source ~/.zshrc
-	cyg-conda info --envs
     }
 
-    PATH=$PATH:$CONDA_PREFIX
-    PATH=$PATH:$CONDA_PREFIX/Library/mingw-w64/bin
-    PATH=$PATH:$CONDA_PREFIX/Library/usr/bin
-    PATH=$PATH:$CONDA_PREFIX/Library/bin
-    PATH=$PATH:$CONDA_PREFIX/Scripts
-    PATH=$PATH:$HOME/scripts
-    PATH=$PATH:$HOME/local/bin
-    PATH=$PATH:/usr/local/bin
-    PATH=$PATH:/usr/bin
-
-    export PATH
-    
+    . C:/Users/Pooja/Anaconda3/etc/profile.d/conda.sh
 fi
 
 ##Variables necessary for virtualenvwrapper.sh
