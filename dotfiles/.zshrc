@@ -37,24 +37,42 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
     if [ ${CONDA_DEFAULT_ENV} ] && [ ${CONDA_DEFAULT_ENV} != 'root' ]; then
 	export CONDA_PREFIX=${CONDA_BASE_DIR}/envs/${CONDA_DEFAULT_ENV}
     else
-	export CONDA_DEFAULT_ENV=${CONDA_BASE_DIR}
+	export CONDA_DEFAULT_ENV=root
 	export CONDA_PREFIX=${CONDA_BASE_DIR}
     fi
 
-    alias cyg-conda=${CONDA_BASE_DIR}/Scripts/conda.exe
-    cyg-activate() {
-	export CONDA_DEFAULT_ENV=$1
-	source ~/.zshrc
-    }
-
-    cyg-deactivate(){
-	export CONDA_DEFAULT_ENV= ${CONDA_BASE_DIR}
-	source ~/.zshrc
-    }
-		
-
-    . C:/Users/Pooja/Anaconda3/etc/profile.d/conda.sh
-fi
+#    alias cyg-conda=${CONDA_BASE_DIR}/Scripts/conda.exe
+#    alias conda-env=${CONDA_BASE_DIR}/Scripts/conda-env.exe
+#    alias activate=${CONDA_BASE_DIR}/Scripts/activate
+#    alias deactivate=${CONDA_BASE_DIR}/Scripts/deactivate
+#    cyg-activate() {
+#	export CONDA_DEFAULT_ENV=$1
+#	source ~/.zshrc
+#	export VIRTUAL_ENV=$1
+#    }
+#
+#    cyg-deactivate(){
+#	export CONDA_DEFAULT_ENV= root
+#	export CONDA_PREFIX=${CONDA_BASE_DIR}
+#	source ~/.zshrc
+#    }
+#
+#    PATH=
+#    PATH=$PATH:$CONDA_PREFIX
+#    PATH=$PATH:$CONDA_PREFIX/Library/mingw-w64/bin
+#    PATH=$PATH:$CONDA_PREFIX/Library/usr/bin
+#    PATH=$PATH:$CONDA_PREFIX/Library/bin
+#    PATH=$PATH:$CONDA_PREFIX/Scripts
+#    PATH=$PATH:$HOME/scripts
+#    PATH=$PATH:$HOME/local/bin
+#    PATH=$PATH:/usr/local/bin
+#    PATH=$PATH:/usr/bin
+#
+#    export PATH
+#
+#    
+#    . c:/users/pooja/Anaconda3/etc/profile.d/conda.sh
+#fi
 
 ##Variables necessary for virtualenvwrapper.sh
 WORKON_HOME=$HOME/.virtualenvs
