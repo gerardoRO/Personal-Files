@@ -47,6 +47,9 @@ PACKAGES=(
     python3-setuptools
     gcc-g++
     make
+    libpng-tools
+    python3-devel
+    libfreetype-devel
 )
 
 echo "installing packages"
@@ -71,7 +74,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 chmod +x install.sh
 ./install.sh
 fi
-
+exit
 if [[ ! -d ~/Repos/PersonalFiles ]] ;then
     git clone https://github.umn.edu/rodr0283/PersonalFiles $HOME/Repos/PersonalFiles
     ln -fs $HOME/Repos/PersonalFiles/dotfiles/mytheme* $HOME/.oh-my-zsh/themes/
