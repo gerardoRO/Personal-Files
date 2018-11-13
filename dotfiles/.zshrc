@@ -72,7 +72,7 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
 #
 #    
 #    . c:/users/pooja/Anaconda3/etc/profile.d/conda.sh
-#fi
+fi
 
 ##Variables necessary for virtualenvwrapper.sh
 WORKON_HOME=$HOME/.virtualenvs
