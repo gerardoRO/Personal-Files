@@ -44,6 +44,9 @@ PACKAGES=(
     tmux
     python3
     python3-pip
+    python3-setuptools
+    gcc-g++
+    make
 )
 
 echo "installing packages"
@@ -54,7 +57,6 @@ install_stuff ${PACKAGES[@]}
 
 PYTHON_PACKAGES=(
     virtualenv
-    numpy
     virtualenvwrapper
 )
 
