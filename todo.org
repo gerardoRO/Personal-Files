@@ -15,9 +15,8 @@
 
 >>>>>>> refs/remotes/origin/master
 ** TODO CalibrationSystem.vi
-*** Change Python to output a single double to incorporate into the array
-*** Enable Hydrophone Recording
-*** TEST!
+** TODO Develop remaining vocalization waveforms into the ultrasound range 
+** TODO figure out how to develop waveforms using Agilent waveform builder in LabView to simply things
 * SFA
 
 * Personal

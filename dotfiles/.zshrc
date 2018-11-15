@@ -28,6 +28,13 @@ alias grep='grep -n --color -i'
 
 source $HOME/Repos/PersonalFiles/dotfiles/.zshrc_functions
 
+
+##Variables necessary for virtualenvwrapper.sh
+WORKON_HOME=$HOME/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=$(which python3)
+export WORKON_HOME
+export VIRTUALENVWRAPPER_PYTHON
+
 ##################################################################################################################
 #Processes needed only at work
 
@@ -71,16 +78,11 @@ if [[ $HOST == 'BME-LIMGRAD7' ]]; then
 #    export PATH
 #
 #    
-#    . c:/users/pooja/Anaconda3/etc/profile.d/conda.sh
+    #    . c:/users/pooja/Anaconda3/etc/profile.d/conda.sh
+    source /bin/virtualenvwrapper.sh
+else
+    source /usr/local/bin/virtualenvwrapper.sh
 fi
-
-##Variables necessary for virtualenvwrapper.sh
-WORKON_HOME=$HOME/.virtualenvs
-VIRTUALENVWRAPPER_PYTHON=$(which python3)
-export WORKON_HOME
-export VIRTUALENVWRAPPER_PYTHON
-
-source /bin/virtualenvwrapper.sh
 
 
 tmux
