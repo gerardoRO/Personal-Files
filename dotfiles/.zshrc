@@ -17,9 +17,10 @@ source $ZSH/oh-my-zsh.sh
 
 ##################################################################################################################
 #Create aliases
-export LabCode=$HOME/Repos/SonicLab
-export PersonalCode=$HOME/Repos/PersonalFiles
-export ProcessingCode=C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode
+alias LabCode='cd $HOME/Repos/SonicLab'
+alias PersonalCode='cd $HOME/Repos/PersonalFiles'
+alias GroceryCode='cd $HOME/Repos/PythonProjects/Grocery_Store_Projects'
+alias ProcessingCode='cd C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode'
 
 alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 alias grep='grep -n --color -i'
