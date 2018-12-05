@@ -38,7 +38,7 @@
 ;;========================================================================
 ;; Theme
 (if (eq system-type 'cygwin)
-    (load-theme 'solarized t)
+    (load-theme 'misterioso t)
   (load-theme 'monokai t)
 )
 

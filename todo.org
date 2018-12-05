@@ -23,6 +23,11 @@
 ** TODO Ask Greg MOlnar about Science-Medical Liaision
 
 
+* NEXT EXPERIMENT
+1) Compare ABR Response for US Tone and Air Tone
+2) Perform TC with US
+3) Observe spike response in ipsilateral ICC?
+
 
 
 
