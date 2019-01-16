@@ -23,11 +23,18 @@
 ** TODO Ask Greg MOlnar about Science-Medical Liaision
 
 
+<<<<<<< HEAD
+* NEXT EXPERIMENT
+1) Compare ABR Response for US Tone and Air Tone
+2) Perform TC with US
+3) Observe spike response in ipsilateral ICC?
+=======
 * tonight
 ** trim nails
 ** shave beard
 ** start writing poem for Alex
 ** call boardgame shop to see if we can return the game
+>>>>>>> 5223ea509a58d767c634e9082f44e9a165a5e56c
 
 
 
