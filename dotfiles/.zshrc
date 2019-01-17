@@ -37,6 +37,7 @@ VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export WORKON_HOME
 export VIRTUALENVWRAPPER_PYTHON
 
+export PYTHONSTARTUP=~/.pythonrc
 ##################################################################################################################
 #Processes needed only at work
 

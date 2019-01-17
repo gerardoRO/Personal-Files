@@ -78,7 +78,7 @@ fi
 if [[ ! -d ~/Repos/PersonalFiles ]] ;then
     git clone https://github.umn.edu/rodr0283/PersonalFiles $HOME/Repos/PersonalFiles
     ln -fs $HOME/Repos/PersonalFiles/dotfiles/mytheme* $HOME/.oh-my-zsh/themes/
-    ln -fs $HOME/Repos/PersonalFiles/dotfiles/{init.el,.zshrc,.minttyrc} $HOME/
+    ln -fs $HOME/Repos/PersonalFiles/dotfiles/{init.el,.zshrc,.minttyrc,.pythonrc} $HOME/
     git config --global user.email gerarodore@hotmail.com
     git config --global user.name Gerardo
 fi
