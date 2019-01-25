@@ -1,0 +1,24 @@
+* Description
+Harness that sits on top of a french press which will contain a heating element
+and a container for holding coffee. Once the temperature reaches a certain level
+the coffee will be emptied into the container and let it steep.
+
+* Things to do
+** Program arduino
+*** Measure water temperature
+*** Measure water level
+*** Turn on at a specific time power to a channel
+*** Turn off when temp/level reach certain properties
+** Draw Template
+** 3D print coffee container
+
+
+
+* Things to buy
+** [[https://www.amazon.com/Dernord-Foldback-Heater-Element-Density/dp/B018S4AP5Y/ref=pd_day0_hl_60_3?_encoding=UTF8&pd_rd_i=B018S4AP5Y&pd_rd_r=a78d946a-20d4-11e9-a560-cf993223e1a5&pd_rd_w=C4Li7&pd_rd_wg=9wqj6&pf_rd_p=ad07871c-e646-4161-82c7-5ed0d4c85b07&pf_rd_r=G2XA6DZPE9N3C3X1959C&psc=1&refRID=G2XA6DZPE9N3C3X1959C][heating element]]
+** Metal brace for top of coffee press
+
+
+* Problems to still solve
+** How will the heating element be coupled to metal brace
+** How will we control time? LCD display or pre-programmed?
