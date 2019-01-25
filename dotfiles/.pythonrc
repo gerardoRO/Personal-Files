@@ -1,9 +1,34 @@
-#~./pythonrc
+import os
+import sys
+import rlcompleter
+
+history = os.path.join(os.environ['HOME'],".pyhist")
+
+if os.uname()[0] == 'Darwin':
+    import gnureadline as readline
+else:
+    import readlinexs
+
+
 
 try:
-    import readline
-except ImportError:
-    print('Module readline not available.')
-else:
-    import rlcompleter
-    readline.parse_and_bind('tab: complete')
+    readline.read_history_file(history)
+except IOError:
+    pass
+
+import atexit
+atexit.register(readline.write_history_file, history)
+
+readline.parse_and_bind('tab: complete')
+#if os.uname()[0] == 'Darwin':
+#    readline.parse_and_bind('bind ^I rl_complete')
+#else:
+#    readline.parse_and_bind("tab: complete")
+
+del os,history
+    
+
+
+    
+    
+    

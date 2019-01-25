@@ -8,7 +8,7 @@
 ;;(package-refresh-contents)
 
 (defvar prelude-packages
-  '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme))
+  '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme elpy))
 
 (defun prelude-packages-installed-p ()
   (loop for p in prelude-packages
@@ -56,7 +56,7 @@
     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(package-selected-packages
    (quote
-    (hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
+    (elpy hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

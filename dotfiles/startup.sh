@@ -61,6 +61,8 @@ install_stuff ${PACKAGES[@]}
 PYTHON_PACKAGES=(
     virtualenv
     virtualenvwrapper
+    gnureadline
+    PyQt5
 )
 
 python3 -m pip install --upgrade pip
@@ -79,6 +81,8 @@ if [[ ! -d ~/Repos/PersonalFiles ]] ;then
     git clone https://github.umn.edu/rodr0283/PersonalFiles $HOME/Repos/PersonalFiles
     ln -fs $HOME/Repos/PersonalFiles/dotfiles/mytheme* $HOME/.oh-my-zsh/themes/
     ln -fs $HOME/Repos/PersonalFiles/dotfiles/{init.el,.zshrc,.minttyrc,.pythonrc} $HOME/
+    mkdir $HOME/.matplotlib
+    ln -fs $HOME/Repos/PersonalFiles/dotfiles/matplotlibrc $HOME/.matplotlib/
     git config --global user.email gerarodore@hotmail.com
     git config --global user.name Gerardo
 fi
