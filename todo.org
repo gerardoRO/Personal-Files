@@ -1,7 +1,10 @@
 * Colloquium
 
 * Lab
-** DONE Send email to Maryam asking about methods to calculate the Power/Amplitude of a Non-Stationary Signal
+** CODE
+*** TODO vararginreader needs to work for the bottom wien variables is empty
+*** TODO process data in ProcSpkData for BN with soun intensities [0:10:60]
+*** TODO vararginreader feeds all new fields into the same field (as a cell)
 * SFA
 
 * Personal
