@@ -61,6 +61,7 @@ install_stuff ${PACKAGES[@]}
 PYTHON_PACKAGES=(
     virtualenv
     virtualenvwrapper
+    gnureadline
 )
 
 python3 -m pip install --upgrade pip
