@@ -17,6 +17,7 @@ source $ZSH/oh-my-zsh.sh
 
 ##################################################################################################################
 #Create aliases
+alias expcode='cd /Volumes/labshare/Experiments/Gerardo'
 alias LabCode='cd $HOME/Repos/SonicLab'
 alias PersonalCode='cd $HOME/Repos/PersonalFiles'
 alias GroceryCode='cd $HOME/Repos/PythonProjects/Grocery_Store_Projects'
