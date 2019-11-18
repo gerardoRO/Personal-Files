@@ -12,13 +12,6 @@ else
 fi
 
 }
-#################################################################################   
-matlabRun() {
-    matlab -nodisplay -nosplash -nodesktop -r
-    "try, run('$1');, catch, exit(1), end, exit(0)";
-    echo -e "--- 1 [error] --- 0 [complete]\n Matlab Error Code: ($?)";
-}
-
 
 #################################################################################
 search() {
