@@ -1,11 +1,11 @@
 (require 'package)
-
 (package-initialize)
 ;; load emacs 24 package system. Add MELP repository
 
-(setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")))
+(setq package-archives '(("elpa" . "https://elpa.gnu.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-;;(package-refresh-contents)
+(package-refresh-contents)
 
 (defvar prelude-packages
   '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme elpy))
@@ -38,8 +38,9 @@
 ;;========================================================================
 ;; Theme
 (if (eq system-type 'cygwin)
+
     (load-theme 'misterioso t)
-  (load-theme 'monokai t)
+;;  (load-theme 'monokai t)
 )
 
 (set-terminal-parameter nil 'background-mode 'dark)
@@ -56,11 +57,18 @@
     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(package-selected-packages
    (quote
-    (elpy hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
+    (gnu-elpa-keyring-update elpy hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(custom-comment-tag ((t (:foreground "brightred"))))
+ '(custom-group-tag ((t (:inherit variable-pitch :foreground "cyan" :weight bold :height 1.2))))
+ '(custom-variable-tag ((t (:foreground "cyan" :weight bold))))
+ '(font-lock-comment-face ((t (:foreground "green"))))
+ '(minibuffer-prompt ((t (:foreground "blue"))))
+ '(rectangle-preview ((t (:inherit region))))
+ '(region ((t (:background "brightblack")))))
+  

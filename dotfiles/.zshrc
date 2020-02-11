@@ -13,14 +13,11 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
-
+LS_COLORS=$LS_COLORS:'di=4,35'; export LS_COLORS
 ##################################################################################################################
 #Create aliases
 alias expcode='cd /Volumes/labshare/Experiments/Gerardo'
-alias labcode='cd $HOME/Repos/SonicLab'
 alias personalcode='cd $HOME/Repos/PersonalFiles'
-alias processingcode='cd C:/Users/Pooja/Documents/MATLAB/SONICLab/ProcessingCode'
 
 alias matlab='/Applications/MATLAB_R2019a.app/bin/matlab -nosplash -nodesktop'
 alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
