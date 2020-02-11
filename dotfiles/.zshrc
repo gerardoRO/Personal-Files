@@ -13,7 +13,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-LS_COLORS=$LS_COLORS:'di=4,35'; export LS_COLORS
+color_file=$HOME/Repos/PersonalFiles/dotfiles/colors
+eval "$(dircolors $color_file)"
+
 ##################################################################################################################
 #Create aliases
 alias expcode='cd /Volumes/labshare/Experiments/Gerardo'
@@ -22,6 +24,7 @@ alias personalcode='cd $HOME/Repos/PersonalFiles'
 alias matlab='/Applications/MATLAB_R2019a.app/bin/matlab -nosplash -nodesktop'
 alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 alias grep='grep -n --color -i'
+alias ls='ls -B --group-directories-first --color=always'
 ##################################################################################################################
 #Add function file
 

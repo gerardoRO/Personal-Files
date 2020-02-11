@@ -5,7 +5,7 @@
 (setq package-archives '(("elpa" . "https://elpa.gnu.org/packages/")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-(package-refresh-contents)
+;;(package-refresh-contents) ;; abilitate when necessary -> slows down
 
 (defvar prelude-packages
   '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme elpy))
@@ -47,6 +47,8 @@
 
 
 ;;========================================================================
+(set-face-background 'mode-line "brightblack")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
