@@ -7,7 +7,7 @@ history = os.path.join(os.environ['HOME'],".pyhist")
 if os.uname()[0] == 'Darwin':
     import gnureadline as readline
 else:
-    import readlinexs
+    import gnureadline as readline
 
 
 
