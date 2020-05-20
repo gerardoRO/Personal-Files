@@ -45,6 +45,7 @@ PACKAGES=(
     python3
     python3-pip
     python3-setuptools
+    libncurses5-dev
     gcc-g++
     make
     libpng-tools
@@ -63,6 +64,7 @@ PYTHON_PACKAGES=(
     virtualenvwrapper
     gnureadline
     PyQt5
+    tkinter
 )
 
 python3 -m pip install --upgrade pip
