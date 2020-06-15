@@ -13,18 +13,19 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
 ##################################################################################################################
 #Create aliases
-alias personalcode='cd $HOME/Repos/PersonalFiles'
-
-
 alias matlab='/Applications/MATLAB_R2019a.app/bin/matlab -nosplash -nodesktop'
 alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 alias grep='grep -n --color -i'
 alias emacs='emacs -nw' #run emacs without calling X11 system
 
-LS_COLORS='di=0;35:';export LS_COLORS
+alias gerardo='cd /mnt/c/Users/Gerardo'
+
+alias map_andrew='sudo mount -t drvfs M: /mnt/m'
+alias andrewfiles='cd /mnt/m/Experiments/Gerardo'
+alias map_sonic='sudo mount -t drvfs Z: /mnt/z'
+alias quicknote='emacs ~/Repos/Notes/notes.org'
 ##################################################################################################################
 #Add function file
 source $HOME/Repos/PersonalFiles/dotfiles/.zshrc_functions
@@ -43,8 +44,7 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 ##################################################################################################################
 # Necessary to show python figures in WSL
 export DISPLAY=localhost:0.0
-alias charm="/mnt/c/Program\ Files/JetBrains/PyCharm\ Community\ Edition\ 2020.1.1/bin/pycharm64.exe"
 
 
 tmux
-
+LS_COLORS='di=0;35:ow=0;35:';export LS_COLORS
