@@ -3,7 +3,7 @@
 #Determine OS type
 case $(uname) in
     Linux)
-	alias install_stuff='apt-get install'
+	alias install_stuff='sudo apt-get install'
     ;;
     CYGWIN*)
 	if [ ! -x /bin/apt-cyg ];then
@@ -65,6 +65,7 @@ PYTHON_PACKAGES=(
     gnureadline
     PyQt5
     tkinter
+    pdbpp
 )
 
 python3 -m pip install --upgrade pip
