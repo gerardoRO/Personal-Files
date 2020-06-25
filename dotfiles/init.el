@@ -5,7 +5,7 @@
 (setq package-archives '(("elpa" . "https://elpa.gnu.org/packages/")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-;;(package-refresh-contents) ;; abilitate when necessary -> slows down
+(package-refresh-contents) ;; abilitate when necessary -> slows down
 
 (defvar prelude-packages
   '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme elpy))
@@ -18,7 +18,6 @@
 (dolist (p prelude-packages)
   (when (not (package-installed-p p))
     (package-install p)))
-
 ;;========================================================================
 ;; Line numbers
 (global-linum-mode t)
@@ -59,7 +58,7 @@
     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(package-selected-packages
    (quote
-    (gnu-elpa-keyring-update elpy hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
+    (pyenv-mode-auto pyenv-mode flycheck gnu-elpa-keyring-update elpy hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -74,3 +73,11 @@
  '(rectangle-preview ((t (:inherit region))))
  '(region ((t (:background "brightblack")))))
   
+;; for python
+(setq python-shell-interpreter "python3"
+      python-shell-interpreter-args "-i")
+(getenv "WORKON_HOME")
+
+
+(setq elpy-rpc-python-command "python3")
+(setq elpy-enable t)
