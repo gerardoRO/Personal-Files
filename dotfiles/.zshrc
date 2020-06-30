@@ -15,19 +15,29 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 ##################################################################################################################
 #Create aliases
-alias matlab='/Applications/MATLAB_R2019a.app/bin/matlab -nosplash -nodesktop'
+
+if [[ "$(uname)"=="Linux" ]]; then
+    alias matlab='/usr/local/MATLAB/R2020a/bin/matlab -nosplash -nodesktop'
+elif [[ "$(uname)"=="Darwin" ]]; then
+    alias matlab='/Applications/MATLAB_R2019a.app/bin/matlab -nosplash -nodesktop'
+fi
+   
+
+
 alias tmux='tmux -f $HOME/Repos/PersonalFiles/dotfiles/.tmuxMySetup.conf' #run customized tmux
 alias grep='grep -n --color -i'
 alias emacs='emacs -nw' #run emacs without calling X11 system
 
 alias gerardo='cd /mnt/c/Users/Gerardo'
-
 alias map_andrew='sudo mount -t drvfs M: /mnt/m'
 alias andrewfiles='cd /mnt/m/Experiments/Gerardo'
 alias map_sonic='sudo mount -t drvfs Z: /mnt/z'
 alias sonicfiles='cd /mnt/z/'
 alias quicknote='emacs ~/Repos/Notes/notes.org'
 alias jupyter='jupyter-notebook --no-browser --certfile=/mnt/c/Users/Gerardo/mycert.pem --keyfile /mnt/c/Users/Gerardo/mykey.key'
+
+
+
 #alias jupyter-colab='jupyter-notebook --no-browser --NotebookApp.allow_origin=\"https://colab.research.google.com\" --port=2841 --NotebookApp.port_retries=0 --NotebookApp.password='' --NotebookApp.token='''
 ##################################################################################################################
 #Add function file
