@@ -29,13 +29,15 @@ alias grep='grep -n --color -i'
 alias emacs='emacs -nw' #run emacs without calling X11 system
 
 alias gerardo='cd /mnt/c/Users/Gerardo'
+alias geraphonics='cd /mnt/c/Users/Gerardo/Documents/MATLAB/SONICLab/GeraPhonics/'
 alias map_andrew='sudo mount -t drvfs M: /mnt/m'
 alias andrewfiles='cd /mnt/m/Experiments/Gerardo'
 alias map_sonic='sudo mount -t drvfs Z: /mnt/z'
 alias sonicfiles='cd /mnt/z/'
 alias quicknote='emacs ~/Repos/Notes/notes.org'
 alias jupyter='jupyter-notebook --no-browser --certfile=/mnt/c/Users/Gerardo/mycert.pem --keyfile /mnt/c/Users/Gerardo/mykey.key'
-
+alias secondwave='cd /mnt/e/SecondWave'
+alias passwords='emacs /mnt/d/Data\ Backup/Oficial\ Documents/passwords.org'
 
 
 #alias jupyter-colab='jupyter-notebook --no-browser --NotebookApp.allow_origin=\"https://colab.research.google.com\" --port=2841 --NotebookApp.port_retries=0 --NotebookApp.password='' --NotebookApp.token='''
@@ -59,8 +61,14 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 # Necessary to show python figures in WSL
 #export DISPLAY=localhost:0.0 in WSL1
 
-export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0.0 #in WSL 2
+export DISPLAY=192.168.1.38:0
+#export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0 #in WSL 2
 export LIBGL_ALWAYS_INDIRECT=1
+
+
+#Functioning with CUDA
+export PATH=$PATH:/usr/local/cuda-11.0/lib64/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 tmux
 LS_COLORS='di=0;35:ow=0;35:';export LS_COLORS
