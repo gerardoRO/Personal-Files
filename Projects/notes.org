@@ -1,0 +1,2 @@
+* Water Level Sensor
+** For some reason, maximum read value is 350 (2/8/2020). Threshold value around 200 should be enough

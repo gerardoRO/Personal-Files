@@ -17,8 +17,9 @@ source $ZSH/oh-my-zsh.sh
 #Create aliases
 
 if [[ "$(uname)"=="Linux" ]]; then
-    alias matlab='/usr/local/MATLAB/R2020a/bin/matlab -nosplash -nodesktop'
-elif [[ "$(uname)"=="Darwin" ]]; then
+    #    alias matlab='/usr/local/MATLAB/R2020a/bin/matlab -nosplash -nodesktop'
+fi
+if [[ "$(uname)"=="Darwin" ]]; then
     alias matlab='/Applications/MATLAB_R2019a.app/bin/matlab -nosplash -nodesktop'
 fi
    
@@ -53,14 +54,14 @@ export PYTHONSTARTUP=~/.pythonrc
 
 ##################################################################################################################
 #Processes  needed to run virtual environment
-source $HOME/.local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 ##################################################################################################################
 # Necessary to show python figures in WSL
 #export DISPLAY=localhost:0.0 in WSL1
 
-export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0.0 #in WSL 2
-export LIBGL_ALWAYS_INDIRECT=1
+#export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0.0 #in WSL 2
+#export LIBGL_ALWAYS_INDIRECT=1
 
 tmux
 LS_COLORS='di=0;35:ow=0;35:';export LS_COLORS

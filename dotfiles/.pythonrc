@@ -1,32 +1,32 @@
 import os
 import sys
 import rlcompleter
-
-history = os.path.join(os.environ['HOME'],".pyhist")
-
-if os.uname()[0] == 'Darwin':
-    import gnureadline as readline
-else:
-    import gnureadline as readline
-
-
-
-try:
-    readline.read_history_file(history)
-except IOError:
-    pass
-
-import atexit
-atexit.register(readline.write_history_file, history)
-
-readline.parse_and_bind('tab: complete')
+#
+#history = os.path.join(os.environ['HOME'],".pyhist")
+#
 #if os.uname()[0] == 'Darwin':
-#    readline.parse_and_bind('bind ^I rl_complete')
+#    import gnureadline as readline
 #else:
-#    readline.parse_and_bind("tab: complete")
-
-del os,history
-    
+#    import gnureadline as readline
+#
+#
+#
+#try:
+#    readline.read_history_file(history)
+#except IOError:
+#    pass
+#
+#import atexit
+#atexit.register(readline.write_history_file, history)
+#
+#readline.parse_and_bind('tab: complete')
+##if os.uname()[0] == 'Darwin':
+##    readline.parse_and_bind('bind ^I rl_complete')
+##else:
+##    readline.parse_and_bind("tab: complete")
+#
+#del os,history
+#    
 
 
     
