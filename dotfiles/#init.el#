@@ -1,0 +1,83 @@
+(require 'package)
+(package-initialize)
+;; load emacs 24 package system. Add MELP repository
+
+(setq package-archives '(("elpa" . "https://elpa.gnu.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+;;(package-refresh-contents) ;; abilitate when necessary -> slows down
+
+(defvar prelude-packages
+  '(python solarized-theme matlab-mode multiple-cursors anaconda-mode monokai-theme elpy jedi))
+
+(defun prelude-packages-installed-p ()
+  (loop for p in prelude-packages
+	when (not (packages-installed-p p)) do (return nil)
+	finally (return t)))
+
+(dolist (p prelude-packages)
+  (when (not (package-installed-p p))
+    (package-install p)))
+;;========================================================================
+;; Line numbers
+(global-linum-mode t)
+(setq linum-format "%3d\u2502")
+
+;;========================================================================
+;; backup
+(setq make-backup-files nil)
+
+;;========================================================================
+;; multiple cursors prorgram
+(require 'multiple-cursors)
+
+(global-set-key (kbd "C-c m") 'mc/edit-lines) ;; add multiple continuous cursors
+(global-set-key (kbd "C-c a") 'mc/mark-all-like-this) ;; add multiple cursors to all like this
+(global-set-key (kbd "C-c S-a") 'mc/mark-next-word-like-this) ;; add multiple cursors at whole words
+;;========================================================================
+;; Theme
+(if (eq system-type 'cygwin)
+
+    (load-theme 'misterioso t)
+;;  (load-theme 'monokai t)
+)
+
+(set-terminal-parameter nil 'background-mode 'dark)
+
+
+;;========================================================================
+(set-face-background 'mode-line "brightblack")
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(package-selected-packages
+   (quote
+    (xref-js2 jedi pyenv-mode-auto pyenv-mode flycheck gnu-elpa-keyring-update elpy hideshow-org anaconda-mode solarized-theme multiple-cursors matlab-mode color-theme-solarized airplay)))
+ '(send-mail-function (quote mailclient-send-it)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-comment-tag ((t (:foreground "brightred"))))
+ '(custom-group-tag ((t (:inherit variable-pitch :foreground "cyan" :weight bold :height 1.2))))
+ '(custom-variable-tag ((t (:foreground "cyan" :weight bold))))
+ '(font-lock-comment-face ((t (:foreground "green"))))
+ '(minibuffer-prompt ((t (:foreground "blue"))))
+ '(rectangle-preview ((t (:inherit region))))
+ '(region ((t (:background "brightblack")))))
+  
+;; for python
+(setq python-shell-interpreter "python3"
+      python-shell-interpreter-args "-i")
+(getenv "WORKON_HOME")
+
+(setq elpy-rpc-backend "jedi")
+(setq elpy-rpc-python-command "python3")
+(setq elpy-enable t)
