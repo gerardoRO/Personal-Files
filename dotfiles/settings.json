@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "python.venvFolders": [
+        "C:/Users/Gerardo/.virtualenvs"
+    ],
+    "settingsSync.ignoredSettings": [
+        "-python.venvFolders"
+    ],
+    "python.venvPath": "C:/Users/Gerardo/.virtualenvs",
+    "python.terminal.launchArgs": [
+        "-m",
+        "IPython"
+    ],
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "matlab.mlintpath": "C:\\Program Files\\MATLAB\\R2021a\\bin\\win64\\mlint.exe",
+    "jupyter.askForKernelRestart": false
+}

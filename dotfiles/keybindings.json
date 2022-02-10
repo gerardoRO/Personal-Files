@@ -1,0 +1,77 @@
+[
+    {
+        "key": "ctrl+o ctrl+o",
+        "command": "workbench.action.focusActivityBar",
+        "when": "editorTextFocus || editorFocus"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+o ctrl+i",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "editorTextFocus || editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+up",
+        "command": "-workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+o ctrl+k",
+        "command": "workbench.action.focusBelowGroup",
+        "when": "editorTextFocus || editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+down",
+        "command": "-workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+o ctrl+j",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "editorTextFocus || editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+o ctrl+l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "editorTextFocus || editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+/ r",
+        "command": "python.startREPL"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    }
+]
